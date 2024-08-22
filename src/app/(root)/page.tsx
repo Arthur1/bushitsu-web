@@ -1,8 +1,6 @@
 import type { FC } from 'react'
 
-type IndexPageProps = Readonly<{}>
-
-const IndexPage: FC<IndexPageProps> = () => {
+const IndexPage: FC = () => {
   return <p>hello</p>
 }
 
