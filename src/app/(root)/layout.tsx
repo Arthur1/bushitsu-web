@@ -1,6 +1,7 @@
 import type { FC, ReactNode } from 'react'
 import Providers from './providers'
 import Header from './_components/Header'
+import Footer from './_components/Footer'
 import './globals.css'
 
 type LayoutProps = Readonly<{
@@ -12,10 +13,13 @@ const Layout: FC<LayoutProps> = ({ children }) => {
     <html lang="ja">
       <body>
         <Providers>
-          <header>
+          <div className="flex flex-col min-h-screen">
             <Header />
-          </header>
-          {children}
+            {children}
+            <footer className="mt-auto">
+              <Footer />
+            </footer>
+          </div>
         </Providers>
       </body>
     </html>

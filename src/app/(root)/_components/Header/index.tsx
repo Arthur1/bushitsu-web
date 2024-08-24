@@ -1,15 +1,32 @@
 'use client'
 
 import { Link } from '@nextui-org/link'
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem } from '@nextui-org/navbar'
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+  NavbarMenuToggle,
+} from '@nextui-org/navbar'
 import { usePathname } from 'next/navigation'
-import type { FC } from 'react'
+import { useState, type FC } from 'react'
 
 const Header: FC = () => {
   const pathname = usePathname()
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
   return (
-    <Navbar>
-      <NavbarBrand>Bushitsu</NavbarBrand>
+    <Navbar isBordered onMenuOpenChange={setIsMenuOpen}>
+      <NavbarContent>
+        <NavbarMenuToggle
+          aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+          className="sm:hidden"
+        />
+        <NavbarBrand>
+          <Link color="foreground" href="/">
+            Bushitsu
+          </Link>
+        </NavbarBrand>
+      </NavbarContent>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem isActive={pathname === '/'}>
           <Link color="foreground" href="/">
@@ -19,6 +36,11 @@ const Header: FC = () => {
         <NavbarItem isActive={pathname === '/boardgames'}>
           <Link color="foreground" href="/boardgames">
             Board Games
+          </Link>
+        </NavbarItem>
+        <NavbarItem isActive={pathname === '/facilities'}>
+          <Link color="foreground" href="/facilities">
+            Facilities
           </Link>
         </NavbarItem>
         <NavbarItem isActive={pathname === '/access'}>
