@@ -6,6 +6,7 @@ const BoardGamesPage: FC = () => {
   return (
     <Container>
       <Headline1>Boardgames</Headline1>
+      <p>友人から預かっているものも含まれています。</p>
     </Container>
   )
 }

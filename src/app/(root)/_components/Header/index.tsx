@@ -6,16 +6,27 @@ import {
   NavbarBrand,
   NavbarContent,
   NavbarItem,
+  NavbarMenu,
+  NavbarMenuItem,
   NavbarMenuToggle,
 } from '@nextui-org/navbar'
 import { usePathname } from 'next/navigation'
-import { useState, type FC } from 'react'
+import { useEffect, useState, type FC } from 'react'
 
 const Header: FC = () => {
   const pathname = usePathname()
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const links = [
+    { href: '/', label: 'About' },
+    { href: '/boardgames', label: 'Board Games' },
+    { href: '/facilities', label: 'Facilities' },
+    { href: '/access', label: 'Access' },
+  ]
+  useEffect(() => {
+    setIsMenuOpen(false)
+  }, [pathname])
   return (
-    <Navbar isBordered onMenuOpenChange={setIsMenuOpen}>
+    <Navbar isBordered isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
@@ -28,27 +39,23 @@ const Header: FC = () => {
         </NavbarBrand>
       </NavbarContent>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
-        <NavbarItem isActive={pathname === '/'}>
-          <Link color="foreground" href="/">
-            About
-          </Link>
-        </NavbarItem>
-        <NavbarItem isActive={pathname === '/boardgames'}>
-          <Link color="foreground" href="/boardgames">
-            Board Games
-          </Link>
-        </NavbarItem>
-        <NavbarItem isActive={pathname === '/facilities'}>
-          <Link color="foreground" href="/facilities">
-            Facilities
-          </Link>
-        </NavbarItem>
-        <NavbarItem isActive={pathname === '/access'}>
-          <Link color="foreground" href="/access">
-            Access
-          </Link>
-        </NavbarItem>
+        {links.map(link => (
+          <NavbarItem key={link.href} isActive={pathname === link.href}>
+            <Link color="foreground" href={link.href}>
+              {link.label}
+            </Link>
+          </NavbarItem>
+        ))}
       </NavbarContent>
+      <NavbarMenu>
+        {links.map(link => (
+          <NavbarMenuItem key={link.href} isActive={pathname === link.href}>
+            <Link color="foreground" href={link.href}>
+              {link.label}
+            </Link>
+          </NavbarMenuItem>
+        ))}
+      </NavbarMenu>
     </Navbar>
   )
 }
