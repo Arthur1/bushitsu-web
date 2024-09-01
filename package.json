@@ -13,14 +13,18 @@
     "@nextui-org/navbar": "^2.0.36",
     "@nextui-org/react": "^2.4.6",
     "@nextui-org/system": "^2.2.5",
+    "@nextui-org/table": "^2.0.39",
     "@nextui-org/theme": "^2.2.9",
+    "date-fns": "^3.6.0",
     "framer-motion": "^11.3.30",
     "next": "14.2.6",
+    "papaparse": "^5.4.1",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
     "@types/node": "^20",
+    "@types/papaparse": "^5.3.14",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "@typescript-eslint/eslint-plugin": "^8.2.0",

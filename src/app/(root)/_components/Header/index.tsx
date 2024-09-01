@@ -18,9 +18,9 @@ const Header: FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const links = [
     { href: '/', label: 'About' },
-    { href: '/boardgames', label: 'Board Games' },
-    { href: '/facilities', label: 'Facilities' },
-    { href: '/access', label: 'Access' },
+    { href: '/boardgames/', label: 'Board Games' },
+    { href: '/facilities/', label: 'Facilities' },
+    { href: '/access/', label: 'Access' },
   ]
   useEffect(() => {
     setIsMenuOpen(false)
