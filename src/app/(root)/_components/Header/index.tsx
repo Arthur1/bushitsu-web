@@ -11,7 +11,7 @@ import {
   NavbarMenuToggle,
 } from '@nextui-org/navbar'
 import { usePathname } from 'next/navigation'
-import { useEffect, useState, type FC } from 'react'
+import { useState, type FC } from 'react'
 
 const Header: FC = () => {
   const pathname = usePathname()
@@ -22,9 +22,6 @@ const Header: FC = () => {
     { href: '/facilities/', label: 'Facilities' },
     { href: '/access/', label: 'Access' },
   ]
-  useEffect(() => {
-    setIsMenuOpen(false)
-  }, [pathname])
   return (
     <Navbar isBordered isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent>

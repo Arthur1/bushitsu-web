@@ -11,6 +11,7 @@ const FacilitiesPage: FC = () => {
       <p>ここに書かれているのは一例です。</p>
       <Headline2>家具</Headline2>
       <FacilitiesList
+        tableLabel="家具一覧"
         facilities={[
           'ダイニングテーブル（6人用、90 cm × 240 cm）',
           '椅子 2脚',
@@ -19,6 +20,7 @@ const FacilitiesPage: FC = () => {
       />
       <Headline2>調理器具</Headline2>
       <FacilitiesList
+        tableLabel="調理器具一覧"
         facilities={[
           'システムキッチン（ガスコンロ）',
           '冷蔵庫',
@@ -28,9 +30,12 @@ const FacilitiesPage: FC = () => {
         ]}
       />
       <Headline2>消耗品</Headline2>
-      <FacilitiesList facilities={['プラスチックコップ', '割り箸']} />
+      <FacilitiesList tableLabel="消耗品一覧" facilities={['プラスチックコップ', '割り箸']} />
       <Headline2>デジタル製品</Headline2>
-      <FacilitiesList facilities={['ゲスト用Wi-Fi', 'インクジェットプリンター']} />
+      <FacilitiesList
+        tableLabel="デジタル製品一覧"
+        facilities={['ゲスト用Wi-Fi', 'インクジェットプリンター']}
+      />
     </Container>
   )
 }

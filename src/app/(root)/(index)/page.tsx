@@ -23,11 +23,13 @@ const IndexPage: FC = () => {
           alt="伸縮するダイニングテーブルに6人分の椅子が並べられている。テーブルの上にはプレイマットが敷かれている。"
           src={Pic1}
           className="w-full h-auto object-cover"
+          priority={false}
         />
         <Image
           alt="スタッキングシェルフに様々なボードゲームや、カードゲームのデッキが収納されている。"
           src={Pic2}
           className="w-full h-auto object-cover"
+          priority={false}
         />
       </div>
     </Container>

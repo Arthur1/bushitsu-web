@@ -9,7 +9,7 @@ type BoardGamesTableProps = Readonly<{
 }>
 
 const BoardGamesTable: FC<BoardGamesTableProps> = ({ boardgames }) => (
-  <Table isStriped removeWrapper className="mb-4">
+  <Table isStriped removeWrapper className="mb-4" aria-label="ボードゲームの一覧">
     <TableHeader>
       <TableColumn>ボードゲーム名</TableColumn>
       <TableColumn>拡張か?</TableColumn>
