@@ -4,7 +4,7 @@ import type { BoardGame } from '@/app/api/boardgames/route'
 import BoardGamesTable from './_components/BoardGamesTable'
 
 const getBoardgames = async () => {
-  const res = await fetch('http://localhost:3000/api/boardgames')
+  const res = await fetch('http://127.0.0.1:3000/api/boardgames')
   const boardgames = (await res.json()) as BoardGame[]
   return boardgames
 }
