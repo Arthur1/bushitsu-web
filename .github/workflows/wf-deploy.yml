@@ -17,6 +17,8 @@ jobs:
           cache: pnpm
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
+      - name: Run Server
+        run: pnpm dev &
       - name: Build
         run: pnpm build
         env:

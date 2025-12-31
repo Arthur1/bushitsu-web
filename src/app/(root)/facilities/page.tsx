@@ -27,6 +27,7 @@ const FacilitiesPage: FC = () => {
           '電子レンジ',
           '電気ケトル',
           'グリル鍋',
+          'フライパン',
         ]}
       />
       <Headline2>消耗品</Headline2>
