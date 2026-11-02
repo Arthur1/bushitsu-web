@@ -59,16 +59,16 @@ importers:
         version: 18.3.0
       '@typescript-eslint/eslint-plugin':
         specifier: ^8.2.0
-        version: 8.3.0(@typescript-eslint/parser@8.3.0(eslint@8.57.0)(typescript@5.5.4))(eslint@8.57.0)(typescript@5.5.4)
+        version: 8.3.0(@typescript-eslint/parser@8.3.0(eslint@8.57.1(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.5.4))(eslint@8.57.1(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.5.4)
       eslint:
         specifier: ^8
-        version: 8.57.0
+        version: 8.57.1(supports-color@7.2.0)
       eslint-config-next:
         specifier: 14.2.6
-        version: 14.2.6(eslint@8.57.0)(typescript@5.5.4)
+        version: 14.2.6(eslint@8.57.1(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.5.4)
       eslint-config-prettier:
         specifier: ^9.1.0
-        version: 9.1.0(eslint@8.57.0)
+        version: 9.1.0(eslint@8.57.1(supports-color@7.2.0))
       postcss:
         specifier: ^8
         version: 8.4.43
@@ -112,8 +112,8 @@ packages:
     resolution: {integrity: sha512-269Z39MS6wVJtsoUl10L60WdkhJVdPG24Q4eZTH3nnF6lpvSShEK3wQjDX9JRWAUPvPh7COouPpU9IrqaZFvtQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
 
-  '@eslint/js@8.57.0':
-    resolution: {integrity: sha512-Ys+3g2TaW7gADOJzPt83SJtCDhMjndcDMFVQ/Tj9iA1BfJzFKD9mAUXT3OenpuPHbI6P/myECxRJrofUsDx/5g==}
+  '@eslint/js@8.57.1':
+    resolution: {integrity: sha512-d9zaMRSTIKDLhctzH12MtXvJKSSUhaHcjV+2Z+GK+EEY7XKpP5yR4x+N3TAcHTcu963nIr+TMcCb4DBCYX1z6Q==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
 
   '@formatjs/ecma402-abstract@2.0.0':
@@ -131,8 +131,8 @@ packages:
   '@formatjs/intl-localematcher@0.5.4':
     resolution: {integrity: sha512-zTwEpWOzZ2CiKcB93BLngUX59hQkuZjT2+SAQEscSm52peDW/getsawMcWF1rGRpMCX6D7nSJA3CzJ8gn13N/g==}
 
-  '@humanwhocodes/config-array@0.11.14':
-    resolution: {integrity: sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg==}
+  '@humanwhocodes/config-array@0.13.0':
+    resolution: {integrity: sha512-DZLEEqFWQFiyK6h5YIeynKx7JlvCYWL0cImfSRXZ9l4Sg2efkFGTuFf6vzXjK1cq6IYkU+Eg/JizXw+TD2vRNw==}
     engines: {node: '>=10.10.0'}
     deprecated: Use @eslint/config-array instead
 
@@ -357,6 +357,7 @@ packages:
 
   '@nextui-org/accordion@2.0.38':
     resolution: {integrity: sha512-kFCZU1VaKkUI295Fg3NxuQR2+kZ5vTH4ftIs0oByrOs0+l14dVQGFOd9ZV402fHNykZJt7Sk6oWjTp4Qwl83JA==}
+    deprecated: This package has been deprecated. Please use @heroui/accordion instead.
     peerDependencies:
       '@nextui-org/system': '>=2.0.0'
       '@nextui-org/theme': '>=2.1.0'
@@ -372,6 +373,7 @@ packages:
 
   '@nextui-org/autocomplete@2.1.5':
     resolution: {integrity: sha512-VcSe3B/CmIvfZnAJHHYKp3r83QrqI0T8v9jjrpQ0PN8qKOc7LmQUsvnAkBRuHCLlaC1xPwZtyJp0TJyRF8tM3w==}
+    deprecated: This package has been deprecated. Please use @heroui/autocomplete instead.
     peerDependencies:
       '@nextui-org/system': '>=2.0.0'
       '@nextui-org/theme': '>=2.1.0'
@@ -381,6 +383,7 @@ packages:
 
   '@nextui-org/avatar@2.0.32':
     resolution: {integrity: sha512-2dCpIKuGvbOVLJ6m2AkNhPqqamIin3FDqDLop2ILNhyAxgxPYitqE3JqsUA/hlZCzu79sZudruuubzHWzHqf0Q==}
+    deprecated: This package has been deprecated. Please use @heroui/avatar instead.
     peerDependencies:
       '@nextui-org/system': '>=2.0.0'
       '@nextui-org/theme': '>=2.1.0'
@@ -389,6 +392,7 @@ packages:
 
   '@nextui-org/badge@2.0.31':
     resolution: {integrity: sha512-ayOw9j6Fa/RxZjk+2AhhBzXFm2Xv2RNYMrXAqGaJ+cbhofsqu8QnP0/4W+CiVXx8C0jpPmNAgSklRXgbKHs10Q==}
+    deprecated: This package has been deprecated. Please use @heroui/badge instead.
     peerDependencies:
       '@nextui-org/system': '>=2.0.0'
       '@nextui-org/theme': '>=2.1.0'
@@ -397,6 +401,7 @@ packages:
 
   '@nextui-org/breadcrumbs@2.0.12':
     resolution: {integrity: sha512-PCZI7xqu1UrjJcCkd6HwGJ+h2L5k6LMBQRVbD8/7jMKkJxpoQXC7h5uCtEeLG2CafVih4cUCBTuzUnsubtKLnQ==}
+    deprecated: This package has been deprecated. Please use @heroui/breadcrumbs instead.
     peerDependencies:
       '@nextui-org/system': '>=2.0.0'
       '@nextui-org/theme': '>=2.1.0'
@@ -405,6 +410,7 @@ packages:
 
   '@nextui-org/button@2.0.37':
     resolution: {integrity: sha512-dBtdO30qfu+K4YYLNmmpUy16Q82H1ucY8A4NjP4iEAJ1sPunoAYvba7h9xabrpUKW9IOyItOThSesxsfpaXYug==}
+    deprecated: This package has been deprecated. Please use @heroui/button instead.
     peerDependencies:
       '@nextui-org/system': '>=2.0.0'
       '@nextui-org/theme': '>=2.1.0'
@@ -414,6 +420,7 @@ packages:
 
   '@nextui-org/calendar@2.0.11':
     resolution: {integrity: sha512-pgCEekJHSr5QKxpJaABIFS2ItqgK8qZ7pKrCOJjmRHBh4Y9WGfndrIW6z3IkHZiO01CKJbpjb9ytTjufsU6kIA==}
+    deprecated: This package has been deprecated. Please use @heroui/calendar instead.
     peerDependencies:
       '@nextui-org/system': '>=2.1.0'
       '@nextui-org/theme': '>=2.2.0'
@@ -422,6 +429,7 @@ packages:
 
   '@nextui-org/card@2.0.33':
     resolution: {integrity: sha512-iO/ThbUz75YlcFrWO9EssMhOxbc9LN0SSk181+2QnPDbKls9wbkUEfGjq/d9k3h6jb9FaR5N5XwVpT4aUt2Usw==}
+    deprecated: This package has been deprecated. Please use @heroui/card instead.
     peerDependencies:
       '@nextui-org/system': '>=2.0.0'
       '@nextui-org/theme': '>=2.1.0'
@@ -431,6 +439,7 @@ packages:
 
   '@nextui-org/checkbox@2.1.4':
     resolution: {integrity: sha512-74AD4imL064mvs4trQKQj/efwIZYaBt0TmXO6jV+6xGE6S9YjCAy+OBotrgRBG9fURQVQU1qJGnwwsOIdxCXkA==}
+    deprecated: This package has been deprecated. Please use @heroui/checkbox instead.
     peerDependencies:
       '@nextui-org/system': '>=2.0.0'
       '@nextui-org/theme': '>=2.1.0'
@@ -439,6 +448,7 @@ packages:
 
   '@nextui-org/chip@2.0.32':
     resolution: {integrity: sha512-fGqXamG7xs+DvKPra+rJEkIAjaQwPi8FSvsJ4P4LWzQ3U+HjymEI07BW8xQmaLceHInbTLTfdbTjAYdGNzAdOQ==}
+    deprecated: This package has been deprecated. Please use @heroui/chip instead.
     peerDependencies:
       '@nextui-org/system': '>=2.0.0'
       '@nextui-org/theme': '>=2.1.0'
@@ -447,6 +457,7 @@ packages:
 
   '@nextui-org/code@2.0.32':
     resolution: {integrity: sha512-YBLCWDgR+ebWIr+noN02/ls+PsQV9leLskgPLFUfpRzHoXdGeUUhE8IjTv14KFP3XlW3Cf9ALFy3IgPuIZ+yuQ==}
+    deprecated: This package has been deprecated. Please use @heroui/code instead.
     peerDependencies:
       '@nextui-org/theme': '>=2.1.0'
       react: '>=18'
@@ -454,6 +465,7 @@ packages:
 
   '@nextui-org/date-input@2.1.3':
     resolution: {integrity: sha512-Y6d+AVPnM7uYy7boSHrk+cW/pft1fKbpXh/ed5omTgFx6rKRZ/agQmP5erMcmNzpv3Bis4wCc89WNnBtCjEZMw==}
+    deprecated: This package has been deprecated. Please use @heroui/date-input instead.
     peerDependencies:
       '@nextui-org/system': '>=2.1.0'
       '@nextui-org/theme': '>=2.2.0'
@@ -462,6 +474,7 @@ packages:
 
   '@nextui-org/date-picker@2.1.6':
     resolution: {integrity: sha512-PycYKAm1tmew64aQWQtZfTbV73S4GPGYJnK6hr9W0iXUCOQQH5UbzLwdWGXnVXvtrJzczFQllaXaQccwWCeTzg==}
+    deprecated: This package has been deprecated. Please use @heroui/date-picker instead.
     peerDependencies:
       '@nextui-org/system': '>=2.1.0'
       '@nextui-org/theme': '>=2.2.0'
@@ -470,6 +483,7 @@ packages:
 
   '@nextui-org/divider@2.0.31':
     resolution: {integrity: sha512-z9GhrpmhXhJGuW0GSO1OP01mwDTSItuIRIz0VGpKOPVTqOzOMHkXN978wgNXqJ+knWZcaiF7WHvd83O05jmbkg==}
+    deprecated: This package has been deprecated. Please use @heroui/divider instead.
     peerDependencies:
       '@nextui-org/theme': '>=2.1.0'
       react: '>=18'
@@ -477,6 +491,7 @@ packages:
 
   '@nextui-org/dropdown@2.1.29':
     resolution: {integrity: sha512-ujHJVHzOcfwqNqlkt14t8YV3AAn03sME7gBxujQcwtDFGYMJeP9pvTU24L/FjBEb3Fd1XdhjwowU/sTuVTK4Yg==}
+    deprecated: This package has been deprecated. Please use @heroui/dropdown instead.
     peerDependencies:
       '@nextui-org/system': '>=2.0.0'
       '@nextui-org/theme': '>=2.1.0'
@@ -500,6 +515,7 @@ packages:
 
   '@nextui-org/image@2.0.31':
     resolution: {integrity: sha512-HxWaGUBtNaT9pLGvDo5Q2ruGxdhXYrdNcLvRhtoohiZeIKo1Y8jTbBUCVGxdxklTZAF3H7klrTcsdSwHTGfk0g==}
+    deprecated: This package has been deprecated. Please use @heroui/image instead.
     peerDependencies:
       '@nextui-org/system': '>=2.0.0'
       '@nextui-org/theme': '>=2.1.0'
@@ -508,6 +524,7 @@ packages:
 
   '@nextui-org/input@2.2.4':
     resolution: {integrity: sha512-CVeTwwUJn9pEJC+kq3Jg0nAFeYVGBbIU7U2YFSG8XJK2X75odj8RSQdVd3Dt2U/b5Mtwt5sBh9gMzCedtjffWg==}
+    deprecated: This package has been deprecated. Please use @heroui/input instead.
     peerDependencies:
       '@nextui-org/system': '>=2.0.0'
       '@nextui-org/theme': '>=2.1.0'
@@ -516,6 +533,7 @@ packages:
 
   '@nextui-org/kbd@2.0.33':
     resolution: {integrity: sha512-1Q7vKKJjfn5RPMsySQEljo2clf03Ta4V4ZA4O92ktJ8YzbdNnDfUiWtfFxF64R183ZVfe869RBSpuOdzZLNuKQ==}
+    deprecated: This package has been deprecated. Please use @heroui/kbd instead.
     peerDependencies:
       '@nextui-org/theme': '>=2.1.0'
       react: '>=18'
@@ -523,6 +541,7 @@ packages:
 
   '@nextui-org/link@2.0.34':
     resolution: {integrity: sha512-497AvjzckEB/TE1eJEziS2QkxwCY81RPsWoApNSeHGdYrMO1tfgUFKATgadfBQjoba6FdCcLc2QaUapOetqFaA==}
+    deprecated: This package has been deprecated. Please use @heroui/link instead.
     peerDependencies:
       '@nextui-org/system': '>=2.0.0'
       '@nextui-org/theme': '>=2.1.0'
@@ -531,6 +550,7 @@ packages:
 
   '@nextui-org/link@2.0.35':
     resolution: {integrity: sha512-0XVUsSsysu+WMssokTlLHiMnjr1N6D2Uh3bIBcdFwSqmTLyq+Llgexlm6Fuv1wADRwsR8/DGFp3Pr826cv2Svg==}
+    deprecated: This package has been deprecated. Please use @heroui/link instead.
     peerDependencies:
       '@nextui-org/system': '>=2.0.0'
       '@nextui-org/theme': '>=2.1.0'
@@ -539,6 +559,7 @@ packages:
 
   '@nextui-org/listbox@2.1.25':
     resolution: {integrity: sha512-WJqxhzPxADLIsenREaaoQ44bs3gQx5yqOvK86Jkiv/m9nXr0YuxZOJEsVa5GenkmyJBrEd6LkBV5cZ1TGNzbJw==}
+    deprecated: This package has been deprecated. Please use @heroui/listbox instead.
     peerDependencies:
       '@nextui-org/system': '>=2.0.0'
       '@nextui-org/theme': '>=2.1.0'
@@ -547,6 +568,7 @@ packages:
 
   '@nextui-org/menu@2.0.28':
     resolution: {integrity: sha512-/bcIeBCGpauDkdz6VZvl1YXP5xpSSSYVTvhsChkcvzWzDXLG004uVAsw4kjP2i9OGxoehrjkl9wkIzCFCEdsHw==}
+    deprecated: This package has been deprecated. Please use @heroui/menu instead.
     peerDependencies:
       '@nextui-org/system': '>=2.0.0'
       '@nextui-org/theme': '>=2.1.0'
@@ -555,6 +577,7 @@ packages:
 
   '@nextui-org/modal@2.0.39':
     resolution: {integrity: sha512-b0G5IRNrfQumx8mQQO92rn2iC2ueUuk4XKvxYYmYNpx3/qpdEP9tckozw+s0QFyZocRPY+yYa0pBtMBGC2lWGQ==}
+    deprecated: This package has been deprecated. Please use @heroui/modal instead.
     peerDependencies:
       '@nextui-org/system': '>=2.0.0'
       '@nextui-org/theme': '>=2.1.0'
@@ -564,6 +587,7 @@ packages:
 
   '@nextui-org/navbar@2.0.36':
     resolution: {integrity: sha512-uobdPsh4TSPm2Us74/Vey43z0/oRqWb6x4+eHIJf9VhYP9pY733N2n17v2mvU7SvcNhkold/PWfXPYiA8kMlug==}
+    deprecated: This package has been deprecated. Please use @heroui/navbar instead.
     peerDependencies:
       '@nextui-org/system': '>=2.0.0'
       '@nextui-org/theme': '>=2.1.0'
@@ -573,6 +597,7 @@ packages:
 
   '@nextui-org/navbar@2.0.37':
     resolution: {integrity: sha512-HuHXMU+V367LlvSGjqRPBNKmOERLvc4XWceva+KmiT99BLqHmMECkQVTR6ogO36eJUU96aR8JSfAiHLjvw5msw==}
+    deprecated: This package has been deprecated. Please use @heroui/navbar instead.
     peerDependencies:
       '@nextui-org/system': '>=2.0.0'
       '@nextui-org/theme': '>=2.1.0'
@@ -582,6 +607,7 @@ packages:
 
   '@nextui-org/pagination@2.0.35':
     resolution: {integrity: sha512-07KJgZcJBt2e9RY6TsiQm5qrjDLH+gT3yB7yQ4jPdCK9fkTB0r2kvTOYdPUvrtVJYRq2bwFCWOz+9mokdNfcwg==}
+    deprecated: This package has been deprecated. Please use @heroui/pagination instead.
     peerDependencies:
       '@nextui-org/system': '>=2.0.0'
       '@nextui-org/theme': '>=2.1.0'
@@ -590,6 +616,7 @@ packages:
 
   '@nextui-org/popover@2.1.27':
     resolution: {integrity: sha512-UV42nqvUR9IOy7Hgc5S2Xo+2YWzBAHCcU+C/9O9SchXL0DyU/ol+IPqxuBxdJDi5fiFYr9mTBoPZgAEGDoJjDg==}
+    deprecated: This package has been deprecated. Please use @heroui/popover instead.
     peerDependencies:
       '@nextui-org/system': '>=2.0.0'
       '@nextui-org/theme': '>=2.1.0'
@@ -599,6 +626,7 @@ packages:
 
   '@nextui-org/progress@2.0.33':
     resolution: {integrity: sha512-rP54lZbH7BSzX9sFj7k3ylrUpk10XDWngc1dB1M+GlPsI2XRnzI3s+GE9kuZG2+N6eL/KLVG1YOg8u9eAYnwpA==}
+    deprecated: This package has been deprecated. Please use @heroui/progress instead.
     peerDependencies:
       '@nextui-org/system': '>=2.0.0'
       '@nextui-org/theme': '>=2.1.0'
@@ -607,6 +635,7 @@ packages:
 
   '@nextui-org/radio@2.1.4':
     resolution: {integrity: sha512-Y18TXvGVz/G1E3jjYmutSSx1EdQRs5iMCVZNS/Bz4avE9QMSrHl6fOhZIndrm8LwCTqn7lbKRQngZLN4tvPinQ==}
+    deprecated: This package has been deprecated. Please use @heroui/radio instead.
     peerDependencies:
       '@nextui-org/system': '>=2.0.0'
       '@nextui-org/theme': '>=2.1.0'
@@ -633,6 +662,7 @@ packages:
 
   '@nextui-org/react@2.4.6':
     resolution: {integrity: sha512-8o/k5A5g0xXj6hmV2AulkAswQnZGt2WI64Coq+toWBTumQLcW6iAqPJBDztCDiz+6yiU6Nvk/1ZuZJeRs3XMRw==}
+    deprecated: This package has been deprecated. Please use @heroui/react instead.
     peerDependencies:
       framer-motion: '>=10.17.0'
       react: '>=18'
@@ -640,6 +670,7 @@ packages:
 
   '@nextui-org/ripple@2.0.32':
     resolution: {integrity: sha512-xOqoHWzpvv5KRh7P8pXt3aZEmI1tyhiTNhrwjJaRME0d5xSA0gNzYhrjP5g0+Dxy4nKRDIZ1znJcd87KI07JFA==}
+    deprecated: This package has been deprecated. Please use @heroui/ripple instead.
     peerDependencies:
       '@nextui-org/system': '>=2.0.0'
       '@nextui-org/theme': '>=2.1.0'
@@ -649,6 +680,7 @@ packages:
 
   '@nextui-org/scroll-shadow@2.1.19':
     resolution: {integrity: sha512-od5AnhX6iO0sHoTAVReWv1O1dbNCEeOBOFdnyzFins6ZC5EnAl/oBPR/KLd8glHtgM3Jt8dvIVlBXPEPZKZwaw==}
+    deprecated: This package has been deprecated. Please use @heroui/scroll-shadow instead.
     peerDependencies:
       '@nextui-org/system': '>=2.0.0'
       '@nextui-org/theme': '>=2.1.0'
@@ -657,6 +689,7 @@ packages:
 
   '@nextui-org/select@2.2.5':
     resolution: {integrity: sha512-Il1eigjSXOBgJ745nhn6TDPD1jj1avrnvk9WV/DCjOsFRwfstRnDzsS1aNpZKHqJgHhFRQZ1ivz8hA4x3Zgasg==}
+    deprecated: This package has been deprecated. Please use @heroui/select instead.
     peerDependencies:
       '@nextui-org/system': '>=2.0.0'
       '@nextui-org/theme': '>=2.1.0'
@@ -677,6 +710,7 @@ packages:
 
   '@nextui-org/skeleton@2.0.31':
     resolution: {integrity: sha512-pT0l2skPP6Nq9edLJNQxUJI/WLKu4Lx5Vvs7nlE/9NpkxyQ805l4LiYsMD30dkjjxe+WpXtIjjAXY0BQqdid0Q==}
+    deprecated: This package has been deprecated. Please use @heroui/skeleton instead.
     peerDependencies:
       '@nextui-org/system': '>=2.0.0'
       '@nextui-org/theme': '>=2.1.0'
@@ -685,6 +719,7 @@ packages:
 
   '@nextui-org/slider@2.2.15':
     resolution: {integrity: sha512-ImsxvxAJ2wxRL45y4IbVWThZI/vw2Gq/6qUVZFAwyF54dlro08eJZJIOOG7bKfA5Ob63JLfroUijrlZ9kGP5cA==}
+    deprecated: This package has been deprecated. Please use @heroui/slider instead.
     peerDependencies:
       '@nextui-org/system': '>=2.0.0'
       '@nextui-org/theme': '>=2.1.0'
@@ -693,6 +728,7 @@ packages:
 
   '@nextui-org/snippet@2.0.41':
     resolution: {integrity: sha512-ZZopaecAZbKJIdabwGVF3ahL2MM7L0zZII61SO3LDPAwqXOuta9ixMYk1XVCI0V2PVqTkabQgdpt1ZLgmFH+Kw==}
+    deprecated: This package has been deprecated. Please use @heroui/snippet instead.
     peerDependencies:
       '@nextui-org/system': '>=2.0.0'
       '@nextui-org/theme': '>=2.1.0'
@@ -702,6 +738,7 @@ packages:
 
   '@nextui-org/spacer@2.0.32':
     resolution: {integrity: sha512-NxqEYTig4OfkLDPlO2/jASB4gV8L9DLpsNZSqzaacIJZwk4BCTsNoBi3CuNt5ZsMoGYujtFP6QU0zH9fZbuzwA==}
+    deprecated: This package has been deprecated. Please use @heroui/spacer instead.
     peerDependencies:
       '@nextui-org/theme': '>=2.1.0'
       react: '>=18'
@@ -709,6 +746,7 @@ packages:
 
   '@nextui-org/spinner@2.0.33':
     resolution: {integrity: sha512-c1wW4YEbzdn0t1MJAXhJ2W0PuNxrxtZg2DVqJeqh3180y4iQPYDzEy7oFoU0FpK53LcBPxjfsKHNL6v1pn+60A==}
+    deprecated: This package has been deprecated. Please use @heroui/spinner instead.
     peerDependencies:
       '@nextui-org/theme': '>=2.1.0'
       react: '>=18'
@@ -716,6 +754,7 @@ packages:
 
   '@nextui-org/switch@2.0.33':
     resolution: {integrity: sha512-T7w+8+ex7Pey9HVGXkNft4D11mO5J9iPfmemfLbSOYqbSydcOuINuGRQ1QWy7X+lLYhhZBHb9Ykcf4QtR4dqTQ==}
+    deprecated: This package has been deprecated. Please use @heroui/switch instead.
     peerDependencies:
       '@nextui-org/system': '>=2.0.0'
       '@nextui-org/theme': '>=2.1.0'
@@ -750,6 +789,7 @@ packages:
 
   '@nextui-org/table@2.0.39':
     resolution: {integrity: sha512-VYvmrQ6GliwmzukKLZ7Nxp3sFXdskWZp8/BjwROLFE9Zco22CC0++7VPG3ebOYAIhi4e1Je+QUTx4/eh2wZZgg==}
+    deprecated: This package has been deprecated. Please use @heroui/table instead.
     peerDependencies:
       '@nextui-org/system': '>=2.0.0'
       '@nextui-org/theme': '>=2.1.0'
@@ -758,6 +798,7 @@ packages:
 
   '@nextui-org/tabs@2.0.35':
     resolution: {integrity: sha512-K6uDZbJwn1qLRw8XeBS2TwGQl9zKXg3Q1ShLzVG2IjTGHGNAn9lwkUzn0FNUNaU1GK2o8wOyKhX7K02J3Ev5fw==}
+    deprecated: This package has been deprecated. Please use @heroui/tabs instead.
     peerDependencies:
       '@nextui-org/system': '>=2.0.0'
       '@nextui-org/theme': '>=2.1.0'
@@ -772,6 +813,7 @@ packages:
 
   '@nextui-org/tooltip@2.0.39':
     resolution: {integrity: sha512-DWP3XAmVb/SlcdI4SQodtT8ZyMzYMuvRbq4+JQwm+qq1+FGs55z15+8h9DRFQEseEEaDs0hCs6+kgbieZlUitw==}
+    deprecated: This package has been deprecated. Please use @heroui/tooltip instead.
     peerDependencies:
       '@nextui-org/system': '>=2.0.0'
       '@nextui-org/theme': '>=2.1.0'
@@ -884,6 +926,7 @@ packages:
 
   '@nextui-org/user@2.0.33':
     resolution: {integrity: sha512-v6gGTlsaqM7Ndwtx9N/AAQFRICcIE5DuFxRZRqPfLa+jbZhJuWG2OSIATPeUOxgr8pKWpeV78nETdFKEKcsUPA==}
+    deprecated: This package has been deprecated. Please use @heroui/user instead.
     peerDependencies:
       '@nextui-org/system': '>=2.0.0'
       '@nextui-org/theme': '>=2.1.0'
@@ -1619,6 +1662,7 @@ packages:
 
   '@ungap/structured-clone@1.2.0':
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
+    deprecated: Potential CWE-502 - Update to 1.3.1 or higher
 
   acorn-jsx@5.3.2:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
@@ -2036,8 +2080,8 @@ packages:
     resolution: {integrity: sha512-wpc+LXeiyiisxPlEkUzU6svyS1frIO3Mgxj1fdy7Pm8Ygzguax2N3Fa/D/ag1WqbOprdI+uY6wMUl8/a2G+iag==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
 
-  eslint@8.57.0:
-    resolution: {integrity: sha512-dZ6+mexnaTIbSBZWgou51U6OmzIhYM2VcNdtiTtI7qPNZm35Akpr0f6vtw3w1Kmn5PYo+tZVfh13WrhpS6oLqQ==}
+  eslint@8.57.1:
+    resolution: {integrity: sha512-ypowyDxpVSYpkXr9WPv2PAZCtNip1Mv5KTW0SCurXv/9iOpcrH9PaqUElksqEB6pChqHGDRCFTyrZlGhnLNGiA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
@@ -2518,6 +2562,7 @@ packages:
   next@14.2.6:
     resolution: {integrity: sha512-57Su7RqXs5CBKKKOagt8gPhMM3CpjgbeQhrtei2KLAA1vTNm7jfKS+uDARkSW8ZETUflDCBIsUKGSyQdRs4U4g==}
     engines: {node: '>=18.17.0'}
+    deprecated: This version has a security vulnerability. Please upgrade to a patched version. See https://nextjs.org/blog/security-update-2025-12-11 for more details.
     hasBin: true
     peerDependencies:
       '@opentelemetry/api': ^1.1.0
@@ -3130,17 +3175,17 @@ snapshots:
       tslib: 2.7.0
     optional: true
 
-  '@eslint-community/eslint-utils@4.4.0(eslint@8.57.0)':
+  '@eslint-community/eslint-utils@4.4.0(eslint@8.57.1(supports-color@7.2.0))':
     dependencies:
-      eslint: 8.57.0
+      eslint: 8.57.1(supports-color@7.2.0)
       eslint-visitor-keys: 3.4.3
 
   '@eslint-community/regexpp@4.11.0': {}
 
-  '@eslint/eslintrc@2.1.4':
+  '@eslint/eslintrc@2.1.4(supports-color@7.2.0)':
     dependencies:
       ajv: 6.12.6
-      debug: 4.3.6
+      debug: 4.3.7(supports-color@7.2.0)
       espree: 9.6.1
       globals: 13.24.0
       ignore: 5.3.2
@@ -3151,7 +3196,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@eslint/js@8.57.0': {}
+  '@eslint/js@8.57.1': {}
 
   '@formatjs/ecma402-abstract@2.0.0':
     dependencies:
@@ -3177,10 +3222,10 @@ snapshots:
     dependencies:
       tslib: 2.7.0
 
-  '@humanwhocodes/config-array@0.11.14':
+  '@humanwhocodes/config-array@0.13.0(supports-color@7.2.0)':
     dependencies:
       '@humanwhocodes/object-schema': 2.0.3
-      debug: 4.3.6
+      debug: 4.3.7(supports-color@7.2.0)
       minimatch: 3.1.2
     transitivePeerDependencies:
       - supports-color
@@ -5444,15 +5489,15 @@ snapshots:
       '@types/prop-types': 15.7.12
       csstype: 3.1.3
 
-  '@typescript-eslint/eslint-plugin@8.3.0(@typescript-eslint/parser@8.3.0(eslint@8.57.0)(typescript@5.5.4))(eslint@8.57.0)(typescript@5.5.4)':
+  '@typescript-eslint/eslint-plugin@8.3.0(@typescript-eslint/parser@8.3.0(eslint@8.57.1(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.5.4))(eslint@8.57.1(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.5.4)':
     dependencies:
       '@eslint-community/regexpp': 4.11.0
-      '@typescript-eslint/parser': 8.3.0(eslint@8.57.0)(typescript@5.5.4)
+      '@typescript-eslint/parser': 8.3.0(eslint@8.57.1(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.5.4)
       '@typescript-eslint/scope-manager': 8.3.0
-      '@typescript-eslint/type-utils': 8.3.0(eslint@8.57.0)(typescript@5.5.4)
-      '@typescript-eslint/utils': 8.3.0(eslint@8.57.0)(typescript@5.5.4)
+      '@typescript-eslint/type-utils': 8.3.0(eslint@8.57.1(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.5.4)
+      '@typescript-eslint/utils': 8.3.0(eslint@8.57.1(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.5.4)
       '@typescript-eslint/visitor-keys': 8.3.0
-      eslint: 8.57.0
+      eslint: 8.57.1(supports-color@7.2.0)
       graphemer: 1.4.0
       ignore: 5.3.2
       natural-compare: 1.4.0
@@ -5462,27 +5507,27 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.5.4)':
+  '@typescript-eslint/parser@7.2.0(eslint@8.57.1(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.5.4)':
     dependencies:
       '@typescript-eslint/scope-manager': 7.2.0
       '@typescript-eslint/types': 7.2.0
-      '@typescript-eslint/typescript-estree': 7.2.0(typescript@5.5.4)
+      '@typescript-eslint/typescript-estree': 7.2.0(supports-color@7.2.0)(typescript@5.5.4)
       '@typescript-eslint/visitor-keys': 7.2.0
-      debug: 4.3.6
-      eslint: 8.57.0
+      debug: 4.3.6(supports-color@7.2.0)
+      eslint: 8.57.1(supports-color@7.2.0)
     optionalDependencies:
       typescript: 5.5.4
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/parser@8.3.0(eslint@8.57.0)(typescript@5.5.4)':
+  '@typescript-eslint/parser@8.3.0(eslint@8.57.1(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.5.4)':
     dependencies:
       '@typescript-eslint/scope-manager': 8.3.0
       '@typescript-eslint/types': 8.3.0
-      '@typescript-eslint/typescript-estree': 8.3.0(typescript@5.5.4)
+      '@typescript-eslint/typescript-estree': 8.3.0(supports-color@7.2.0)(typescript@5.5.4)
       '@typescript-eslint/visitor-keys': 8.3.0
-      debug: 4.3.7
-      eslint: 8.57.0
+      debug: 4.3.7(supports-color@7.2.0)
+      eslint: 8.57.1(supports-color@7.2.0)
     optionalDependencies:
       typescript: 5.5.4
     transitivePeerDependencies:
@@ -5498,11 +5543,11 @@ snapshots:
       '@typescript-eslint/types': 8.3.0
       '@typescript-eslint/visitor-keys': 8.3.0
 
-  '@typescript-eslint/type-utils@8.3.0(eslint@8.57.0)(typescript@5.5.4)':
+  '@typescript-eslint/type-utils@8.3.0(eslint@8.57.1(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.5.4)':
     dependencies:
-      '@typescript-eslint/typescript-estree': 8.3.0(typescript@5.5.4)
-      '@typescript-eslint/utils': 8.3.0(eslint@8.57.0)(typescript@5.5.4)
-      debug: 4.3.6
+      '@typescript-eslint/typescript-estree': 8.3.0(supports-color@7.2.0)(typescript@5.5.4)
+      '@typescript-eslint/utils': 8.3.0(eslint@8.57.1(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.5.4)
+      debug: 4.3.6(supports-color@7.2.0)
       ts-api-utils: 1.3.0(typescript@5.5.4)
     optionalDependencies:
       typescript: 5.5.4
@@ -5514,11 +5559,11 @@ snapshots:
 
   '@typescript-eslint/types@8.3.0': {}
 
-  '@typescript-eslint/typescript-estree@7.2.0(typescript@5.5.4)':
+  '@typescript-eslint/typescript-estree@7.2.0(supports-color@7.2.0)(typescript@5.5.4)':
     dependencies:
       '@typescript-eslint/types': 7.2.0
       '@typescript-eslint/visitor-keys': 7.2.0
-      debug: 4.3.6
+      debug: 4.3.6(supports-color@7.2.0)
       globby: 11.1.0
       is-glob: 4.0.3
       minimatch: 9.0.3
@@ -5529,11 +5574,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/typescript-estree@8.3.0(typescript@5.5.4)':
+  '@typescript-eslint/typescript-estree@8.3.0(supports-color@7.2.0)(typescript@5.5.4)':
     dependencies:
       '@typescript-eslint/types': 8.3.0
       '@typescript-eslint/visitor-keys': 8.3.0
-      debug: 4.3.6
+      debug: 4.3.6(supports-color@7.2.0)
       fast-glob: 3.3.2
       is-glob: 4.0.3
       minimatch: 9.0.5
@@ -5544,13 +5589,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/utils@8.3.0(eslint@8.57.0)(typescript@5.5.4)':
+  '@typescript-eslint/utils@8.3.0(eslint@8.57.1(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.5.4)':
     dependencies:
-      '@eslint-community/eslint-utils': 4.4.0(eslint@8.57.0)
+      '@eslint-community/eslint-utils': 4.4.0(eslint@8.57.1(supports-color@7.2.0))
       '@typescript-eslint/scope-manager': 8.3.0
       '@typescript-eslint/types': 8.3.0
-      '@typescript-eslint/typescript-estree': 8.3.0(typescript@5.5.4)
-      eslint: 8.57.0
+      '@typescript-eslint/typescript-estree': 8.3.0(supports-color@7.2.0)(typescript@5.5.4)
+      eslint: 8.57.1(supports-color@7.2.0)
     transitivePeerDependencies:
       - supports-color
       - typescript
@@ -5798,17 +5843,23 @@ snapshots:
 
   date-fns@3.6.0: {}
 
-  debug@3.2.7:
+  debug@3.2.7(supports-color@7.2.0):
     dependencies:
       ms: 2.1.3
+    optionalDependencies:
+      supports-color: 7.2.0
 
-  debug@4.3.6:
+  debug@4.3.6(supports-color@7.2.0):
     dependencies:
       ms: 2.1.2
+    optionalDependencies:
+      supports-color: 7.2.0
 
-  debug@4.3.7:
+  debug@4.3.7(supports-color@7.2.0):
     dependencies:
       ms: 2.1.3
+    optionalDependencies:
+      supports-color: 7.2.0
 
   deep-equal@2.2.3:
     dependencies:
@@ -5984,18 +6035,18 @@ snapshots:
 
   escape-string-regexp@4.0.0: {}
 
-  eslint-config-next@14.2.6(eslint@8.57.0)(typescript@5.5.4):
+  eslint-config-next@14.2.6(eslint@8.57.1(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.5.4):
     dependencies:
       '@next/eslint-plugin-next': 14.2.6
       '@rushstack/eslint-patch': 1.10.4
-      '@typescript-eslint/parser': 7.2.0(eslint@8.57.0)(typescript@5.5.4)
-      eslint: 8.57.0
-      eslint-import-resolver-node: 0.3.9
-      eslint-import-resolver-typescript: 3.6.3(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1)(eslint@8.57.0)
-      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@8.3.0(eslint@8.57.0)(typescript@5.5.4))(eslint@8.57.0)
-      eslint-plugin-jsx-a11y: 6.9.0(eslint@8.57.0)
-      eslint-plugin-react: 7.35.0(eslint@8.57.0)
-      eslint-plugin-react-hooks: 4.6.2(eslint@8.57.0)
+      '@typescript-eslint/parser': 7.2.0(eslint@8.57.1(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.5.4)
+      eslint: 8.57.1(supports-color@7.2.0)
+      eslint-import-resolver-node: 0.3.9(supports-color@7.2.0)
+      eslint-import-resolver-typescript: 3.6.3(@typescript-eslint/parser@7.2.0(eslint@8.57.1(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.5.4))(eslint-import-resolver-node@0.3.9(supports-color@7.2.0))(eslint-plugin-import@2.29.1)(eslint@8.57.1(supports-color@7.2.0))(supports-color@7.2.0)
+      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.2.0(eslint@8.57.1(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.5.4))(eslint-import-resolver-typescript@3.6.3)(eslint@8.57.1(supports-color@7.2.0))(supports-color@7.2.0)
+      eslint-plugin-jsx-a11y: 6.9.0(eslint@8.57.1(supports-color@7.2.0))
+      eslint-plugin-react: 7.35.0(eslint@8.57.1(supports-color@7.2.0))
+      eslint-plugin-react-hooks: 4.6.2(eslint@8.57.1(supports-color@7.2.0))
     optionalDependencies:
       typescript: 5.5.4
     transitivePeerDependencies:
@@ -6003,59 +6054,59 @@ snapshots:
       - eslint-plugin-import-x
       - supports-color
 
-  eslint-config-prettier@9.1.0(eslint@8.57.0):
+  eslint-config-prettier@9.1.0(eslint@8.57.1(supports-color@7.2.0)):
     dependencies:
-      eslint: 8.57.0
+      eslint: 8.57.1(supports-color@7.2.0)
 
-  eslint-import-resolver-node@0.3.9:
+  eslint-import-resolver-node@0.3.9(supports-color@7.2.0):
     dependencies:
-      debug: 3.2.7
+      debug: 3.2.7(supports-color@7.2.0)
       is-core-module: 2.15.1
       resolve: 1.22.8
     transitivePeerDependencies:
       - supports-color
 
-  eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1)(eslint@8.57.0):
+  eslint-import-resolver-typescript@3.6.3(@typescript-eslint/parser@7.2.0(eslint@8.57.1(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.5.4))(eslint-import-resolver-node@0.3.9(supports-color@7.2.0))(eslint-plugin-import@2.29.1)(eslint@8.57.1(supports-color@7.2.0))(supports-color@7.2.0):
     dependencies:
       '@nolyfill/is-core-module': 1.0.39
-      debug: 4.3.6
+      debug: 4.3.6(supports-color@7.2.0)
       enhanced-resolve: 5.17.1
-      eslint: 8.57.0
-      eslint-module-utils: 2.8.2(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@8.57.0)
+      eslint: 8.57.1(supports-color@7.2.0)
+      eslint-module-utils: 2.8.2(@typescript-eslint/parser@7.2.0(eslint@8.57.1(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.5.4))(eslint-import-resolver-node@0.3.9(supports-color@7.2.0))(eslint-import-resolver-typescript@3.6.3)(eslint@8.57.1(supports-color@7.2.0))(supports-color@7.2.0)
       fast-glob: 3.3.2
       get-tsconfig: 4.8.0
       is-bun-module: 1.1.0
       is-glob: 4.0.3
     optionalDependencies:
-      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@8.3.0(eslint@8.57.0)(typescript@5.5.4))(eslint@8.57.0)
+      eslint-plugin-import: 2.29.1(@typescript-eslint/parser@7.2.0(eslint@8.57.1(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.5.4))(eslint-import-resolver-typescript@3.6.3)(eslint@8.57.1(supports-color@7.2.0))(supports-color@7.2.0)
     transitivePeerDependencies:
       - '@typescript-eslint/parser'
       - eslint-import-resolver-node
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-module-utils@2.8.2(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@8.57.0):
+  eslint-module-utils@2.8.2(@typescript-eslint/parser@7.2.0(eslint@8.57.1(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.5.4))(eslint-import-resolver-node@0.3.9(supports-color@7.2.0))(eslint-import-resolver-typescript@3.6.3)(eslint@8.57.1(supports-color@7.2.0))(supports-color@7.2.0):
     dependencies:
-      debug: 3.2.7
+      debug: 3.2.7(supports-color@7.2.0)
     optionalDependencies:
-      '@typescript-eslint/parser': 7.2.0(eslint@8.57.0)(typescript@5.5.4)
-      eslint: 8.57.0
-      eslint-import-resolver-node: 0.3.9
-      eslint-import-resolver-typescript: 3.6.3(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.1)(eslint@8.57.0)
+      '@typescript-eslint/parser': 7.2.0(eslint@8.57.1(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.5.4)
+      eslint: 8.57.1(supports-color@7.2.0)
+      eslint-import-resolver-node: 0.3.9(supports-color@7.2.0)
+      eslint-import-resolver-typescript: 3.6.3(@typescript-eslint/parser@7.2.0(eslint@8.57.1(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.5.4))(eslint-import-resolver-node@0.3.9(supports-color@7.2.0))(eslint-plugin-import@2.29.1)(eslint@8.57.1(supports-color@7.2.0))(supports-color@7.2.0)
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import@2.29.1(@typescript-eslint/parser@8.3.0(eslint@8.57.0)(typescript@5.5.4))(eslint@8.57.0):
+  eslint-plugin-import@2.29.1(@typescript-eslint/parser@7.2.0(eslint@8.57.1(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.5.4))(eslint-import-resolver-typescript@3.6.3)(eslint@8.57.1(supports-color@7.2.0))(supports-color@7.2.0):
     dependencies:
       array-includes: 3.1.8
       array.prototype.findlastindex: 1.2.5
       array.prototype.flat: 1.3.2
       array.prototype.flatmap: 1.3.2
-      debug: 3.2.7
+      debug: 3.2.7(supports-color@7.2.0)
       doctrine: 2.1.0
-      eslint: 8.57.0
-      eslint-import-resolver-node: 0.3.9
-      eslint-module-utils: 2.8.2(@typescript-eslint/parser@7.2.0(eslint@8.57.0)(typescript@5.5.4))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.3)(eslint@8.57.0)
+      eslint: 8.57.1(supports-color@7.2.0)
+      eslint-import-resolver-node: 0.3.9(supports-color@7.2.0)
+      eslint-module-utils: 2.8.2(@typescript-eslint/parser@7.2.0(eslint@8.57.1(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.5.4))(eslint-import-resolver-node@0.3.9(supports-color@7.2.0))(eslint-import-resolver-typescript@3.6.3)(eslint@8.57.1(supports-color@7.2.0))(supports-color@7.2.0)
       hasown: 2.0.2
       is-core-module: 2.15.1
       is-glob: 4.0.3
@@ -6066,13 +6117,13 @@ snapshots:
       semver: 6.3.1
       tsconfig-paths: 3.15.0
     optionalDependencies:
-      '@typescript-eslint/parser': 8.3.0(eslint@8.57.0)(typescript@5.5.4)
+      '@typescript-eslint/parser': 7.2.0(eslint@8.57.1(supports-color@7.2.0))(supports-color@7.2.0)(typescript@5.5.4)
     transitivePeerDependencies:
       - eslint-import-resolver-typescript
       - eslint-import-resolver-webpack
       - supports-color
 
-  eslint-plugin-jsx-a11y@6.9.0(eslint@8.57.0):
+  eslint-plugin-jsx-a11y@6.9.0(eslint@8.57.1(supports-color@7.2.0)):
     dependencies:
       aria-query: 5.1.3
       array-includes: 3.1.8
@@ -6083,7 +6134,7 @@ snapshots:
       damerau-levenshtein: 1.0.8
       emoji-regex: 9.2.2
       es-iterator-helpers: 1.0.19
-      eslint: 8.57.0
+      eslint: 8.57.1(supports-color@7.2.0)
       hasown: 2.0.2
       jsx-ast-utils: 3.3.5
       language-tags: 1.0.9
@@ -6092,11 +6143,11 @@ snapshots:
       safe-regex-test: 1.0.3
       string.prototype.includes: 2.0.0
 
-  eslint-plugin-react-hooks@4.6.2(eslint@8.57.0):
+  eslint-plugin-react-hooks@4.6.2(eslint@8.57.1(supports-color@7.2.0)):
     dependencies:
-      eslint: 8.57.0
+      eslint: 8.57.1(supports-color@7.2.0)
 
-  eslint-plugin-react@7.35.0(eslint@8.57.0):
+  eslint-plugin-react@7.35.0(eslint@8.57.1(supports-color@7.2.0)):
     dependencies:
       array-includes: 3.1.8
       array.prototype.findlast: 1.2.5
@@ -6104,7 +6155,7 @@ snapshots:
       array.prototype.tosorted: 1.1.4
       doctrine: 2.1.0
       es-iterator-helpers: 1.0.19
-      eslint: 8.57.0
+      eslint: 8.57.1(supports-color@7.2.0)
       estraverse: 5.3.0
       hasown: 2.0.2
       jsx-ast-utils: 3.3.5
@@ -6125,20 +6176,20 @@ snapshots:
 
   eslint-visitor-keys@3.4.3: {}
 
-  eslint@8.57.0:
+  eslint@8.57.1(supports-color@7.2.0):
     dependencies:
-      '@eslint-community/eslint-utils': 4.4.0(eslint@8.57.0)
+      '@eslint-community/eslint-utils': 4.4.0(eslint@8.57.1(supports-color@7.2.0))
       '@eslint-community/regexpp': 4.11.0
-      '@eslint/eslintrc': 2.1.4
-      '@eslint/js': 8.57.0
-      '@humanwhocodes/config-array': 0.11.14
+      '@eslint/eslintrc': 2.1.4(supports-color@7.2.0)
+      '@eslint/js': 8.57.1
+      '@humanwhocodes/config-array': 0.13.0(supports-color@7.2.0)
       '@humanwhocodes/module-importer': 1.0.1
       '@nodelib/fs.walk': 1.2.8
       '@ungap/structured-clone': 1.2.0
       ajv: 6.12.6
       chalk: 4.1.2
       cross-spawn: 7.0.3
-      debug: 4.3.6
+      debug: 4.3.7(supports-color@7.2.0)
       doctrine: 3.0.0
       escape-string-regexp: 4.0.0
       eslint-scope: 7.2.2
